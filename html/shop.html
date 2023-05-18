@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+<link rel="stylesheet" href="../CSS/gymmet.css">
+</head>
+<body class="Victor">
+  <header class ="head">
+		<h1>Välkommen till den bästa gymhemsidan i Sverige!</h1>
+		<nav class="länk">
+			<ul class = "länkar">
+				<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/Startsida.html">Start</a></li>
+				<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/%C3%96vningar.html">Övningstips</a></li>
+       			<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/shop.html">Shop</a></li>
+				<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/medlemskap.html">Medlemskap</a></li>
+			</ul>
+		</nav>
+	</header>      
+	<div class="cart-container">
+		<h2>En liten shop</h2>
+		<div class="cart-items"></div>
+		<div class="cart-total">
+			<span>Total:</span>
+			<span id="total-price">0.00 kr</span>
+		</div>
+		<button id="checkout-btn">Checkout</button>
+	</div>
+
+	<div class="product-container">
+		<h2>Produkter</h2>
+		<div class="product-items">
+			<div class="product-item">
+				<img src="../images/cookie.jpg" alt="Proteinbar">
+				<h1 class="bar">Protein Bar</h1>
+				<span>25.00 kr</span>
+				<button class="add-to-cart-btn" data-name="Product 1" data-price="25">Lägg i Varukorg</button>
+			</div>
+			<div class="product-item">
+				<img class="pulver" src="../images/pulver.webp" alt="Proteinpulver">
+				<h2>Protein Pulver</h2>
+				<span>150.00 kr</span>
+				<button class="add-to-cart-btn" data-name="Product 2" data-price="150">Lägg i Varukorg</button>
+			</div>
+			<div class="product-item">
+				<img class="Josef" src="../images/nedladdning (1).jpg" alt="Energidryck">
+				<h3>Nocco</h3>
+				<span>23.00 kr</span>
+				 <button class="add-to-cart-btn" data-name="Product 3" data-price="23">Lägg i Varukorg</button>
+			</div>
+		</div>
+	</div>
+  <footer class="pied">
+		<p>&copy; 2023 Pumpkungen AB</p>
+	</footer>
+	<script src="../javascript/shoppingcart.js"></script>
+</body>
+</html>

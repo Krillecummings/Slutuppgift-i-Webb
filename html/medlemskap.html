@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="../CSS/gymmet.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpkungen.com</title>
+</head>
+<body>
+  
+  <header class ="head">
+		<h1>Välkommen till den bästa gymhemsidan i Sverige!</h1>
+		<nav class="länk">
+			<ul class = "länkar">
+				<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/Startsida.html">Start</a></li>
+				<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/%C3%96vningar.html">Övningstips</a></li>
+        <li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/shop.html">Shop</a></li>
+				<li><a href="file:///C:/Users/Elev/Desktop/Slutuppgift%20i%20Webb/html/medlemskap.html">Medlemskap</a></li>
+		</nav>
+	</header>   
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Logga in</button>
+  <iframe class="karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130444.52512135536!2d17.726158287502365!3d59.27958543032039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f76ec85537be1%3A0x8b43feee38bb7f3c!2sFitness%20World%20Segeltorp!5e0!3m2!1ssv!2sse!4v1684323980060!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img class="le" src="../images/leende.avif" alt="Leendegubbe">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Användarnman</b></label>
+        <input type="text" placeholder="Skriv in användarnman" name="uname" required>
+  
+        <label for="psw"><b>Lösenord</b></label>
+        <input type="password" placeholder="Skriv in lösenord" name="psw" required>
+
+        <label for="msg"><b>Meddelande</b></label>
+        <input type="message" placeholder="Meddelande" name="msg" not required>
+          
+        <button type="submit">Logga in</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Kom Ihåg Mig
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Glömt <a href="#">Lösenord?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  
+  var modal = document.getElementById('id01');
+ 
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+  
+  <footer class="fötter">
+		<p>&copy; 2023 Pumpkungen AB</p>
+	</footer>
+  <html>
