@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pumpkungen.com</title>
 </head>
-<body>
-  
+<body class="Axel">
   <header class ="head">
 		<h1>Välkommen till den bästa gymhemsidan i Sverige!</h1>
 		<nav class="länk">
@@ -29,14 +28,18 @@
         <img class="le" src="../images/leende.avif" alt="Leendegubbe">
       </div>
   
-      <div class="container">
-        <label for="uname"><b>Användarnman</b></label>
-        <input type="text" placeholder="Skriv in användarnman" name="uname" required>
+      <div class="Container">
+        <label for="uname"><b>Användarnamn eller epostadress</b></label>
+        <input class="Epost" type="text" placeholder="Skriv in användarnman eller epostadress" name="uname" required>
   
         <label for="psw"><b>Lösenord</b></label>
         <input type="password" placeholder="Skriv in lösenord" name="psw" required>
 
-        <label for="msg"><b>Meddelande</b></label>
+        <div class="Ärende">
+          <label for="uname"><b>Ärende</b></label>
+          <input type="text" placeholder="Skriv in ärende" name="uname" required>
+
+        <label class="Message" for="msg"><b>Meddelande</b></label>
         <input type="message" placeholder="Meddelande" name="msg" not required>
           
         <button type="submit">Logga in</button>
@@ -53,7 +56,27 @@
   </div>
   
   <script>
-  
+const form = document.querySelector('form');
+const emailInput = document.querySelector('input[type="email"]');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Förhindra formuläret från att skickas
+
+  const email = emailInput.value;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailRegex.test(email)) {
+    // E-postadressen är korrekt formulerad
+    // Skicka formuläret eller utför andra åtgärder
+    form.submit();
+  } else {
+    // E-postadressen är inte korrekt formulerad
+    // Visa ett felmeddelande till användaren
+    alert('Vänligen ange en korrekt e-postadress.');
+  }
+});
+
+
   var modal = document.getElementById('id01');
  
   window.onclick = function(event) {
