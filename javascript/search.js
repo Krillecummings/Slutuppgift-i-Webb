@@ -18,7 +18,6 @@ function search() {
 }
 
 function searchFunction(searchInput) {
-  // Hårdkodade resultat för exemplet
   const results = ["resultat 1", "resultat 2", "resultat 3"];
 
   // Filtrerar resultaten baserat på sökinmatningen (skiftlägesokänslig sökning)
